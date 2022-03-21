@@ -7,10 +7,8 @@ class MyArray
 public:
 	MyArray(); //默认构造  默认100容量
 	MyArray(int capacity);
-	MyArray(const MyArray& array);
-
-	~MyArray();
-
+	MyArray(const MyArray& array);  
+	~MyArray(); 
 
 	//尾插法
 	void push_Back(int val);

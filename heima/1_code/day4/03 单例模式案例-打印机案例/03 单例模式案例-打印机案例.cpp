@@ -8,6 +8,8 @@ class Printer
 private:
 	Printer(){ m_Count = 0; };
 	Printer(const Printer& p);
+	static Printer* singlePrinter;
+	int m_Count;
 
 public:
 	static Printer* getInstance()
@@ -22,12 +24,6 @@ public:
 		cout << "打印机使用了次数为： " << m_Count << endl;
 	}
 
-
-
-
-private:
-	static Printer* singlePrinter;
-	int m_Count;
 };
 Printer* Printer::singlePrinter = new Printer;
 
@@ -47,6 +43,5 @@ int main(){
 
 	test01();
 
-	system("pause");
-	return EXIT_SUCCESS;
+	return 0;
 }

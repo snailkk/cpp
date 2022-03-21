@@ -28,7 +28,6 @@ MyArray::MyArray(const MyArray& array)
 	{
 		this->pAddress[i] = array.pAddress[i];
 	}
-
 }
 //Îö¹¹
 MyArray::~MyArray()
