@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// ()ÖØÔØ
+// ()é‡è½½
 
 class MyPrint
 {
@@ -17,7 +17,7 @@ public:
 void test01()
 {
 	MyPrint myPrint;
-	myPrint("hello world1111"); // ·Âº¯Êı
+	myPrint("hello world1111"); // ä»¿å‡½æ•°
 }
 
 class MyAdd
@@ -34,7 +34,7 @@ void test02()
 	//MyAdd myAdd;
 	//cout << myAdd(1, 1) << endl;
 
-	cout << MyAdd()(1, 1) << endl; //ÄäÃû¶ÔÏó
+	cout << MyAdd()(1, 1) << endl; //åŒ¿åå¯¹è±¡
 }
 
 

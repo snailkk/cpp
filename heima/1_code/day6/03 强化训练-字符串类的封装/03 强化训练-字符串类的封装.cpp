@@ -3,18 +3,18 @@
 #include "MyString.h"
 using namespace std;
 
-//²âÊÔ MyString
+//æµ‹è¯• MyString
 void test01()
 {
 	MyString str = "abc";
 
 	cout << str << endl;
 
-	/*cout << "ÇëÊäÈëstrÐÂµÄÄÚÈÝ£º" << endl;
+	/*cout << "è¯·è¾“å…¥stræ–°çš„å†…å®¹ï¼š" << endl;
 
 	cin >> str;
 
-	cout << "ÐÂÄÚÈÝÎª£º" << str << endl;*/
+	cout << "æ–°å†…å®¹ä¸ºï¼š" << str << endl;*/
 
 	MyString str2(str);
 
@@ -27,22 +27,22 @@ void test01()
 
 	str3[0] = 'w';
 
-	cout << "str3 µÚÒ»¸öÎ»ÖÃÎª = " << str3[0] << endl;
+	cout << "str3 ç¬¬ä¸€ä¸ªä½ç½®ä¸º = " << str3[0] << endl;
 
 
 	MyString str4 = "";
-	str4 = str2 + str3; //×Ö·û´®Æ´½Ó
+	str4 = str2 + str3; //å­—ç¬¦ä¸²æ‹¼æŽ¥
 
-	cout << "str4 Îª " << str4 << endl;
+	cout << "str4 ä¸º " << str4 << endl;
 
 
 	if (str3 == str4)
 	{
-		cout << "str3 Óë str4ÏàµÈ" << endl;
+		cout << "str3 ä¸Ž str4ç›¸ç­‰" << endl;
 	}
 	else
 	{
-		cout << "str3 Óë str4²»ÏàµÈ" << endl;
+		cout << "str3 ä¸Ž str4ä¸ç›¸ç­‰" << endl;
 	}
 
 	/*int a = 10;

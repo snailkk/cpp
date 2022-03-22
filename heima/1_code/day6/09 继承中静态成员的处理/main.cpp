@@ -33,15 +33,15 @@ public:
 };
 int Son::m_A = 20;
 
-//¾²Ì¬³ÉÔ±ÊôĞÔ ×ÓÀà¿ÉÒÔ¼Ì³ĞÏÂÀ´
+//é™æ€æˆå‘˜å±æ€§ å­ç±»å¯ä»¥ç»§æ‰¿ä¸‹æ¥
 void test01()
 {
 	cout << Son::m_A << endl;
-	//·ÃÎÊ¸¸ÀàµÄm_A
+	//è®¿é—®çˆ¶ç±»çš„m_A
 	cout << Base::m_A << endl;
 
 	Son::func();
-	//·ÃÎÊ ¸¸ÀàÖĞÍ¬ÃûµÄº¯Êı
+	//è®¿é—® çˆ¶ç±»ä¸­åŒåçš„å‡½æ•°
 	Son::Base::func(10);
 
 }
@@ -51,6 +51,5 @@ int main(){
 
 	test01();
 
-	system("pause");
-	return EXIT_SUCCESS;
+	return 0;
 }

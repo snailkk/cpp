@@ -6,10 +6,10 @@ ostream& operator<< (ostream& cout, MyString & str)
 	return cout;
 }
 
-//ÓÒÒÆÔËËã·ûÖØÔØ
+//å³ç§»è¿ç®—ç¬¦é‡è½½
 istream& operator>> (istream& cin, MyString & str)
 {
-	//ÏÈÅÐ¶Ï Ô­Ê¼ÊÇ·ñÓÐÄÚÈÝ£¬Èç¹ûÓÐ Çå¿Õ
+	//å…ˆåˆ¤æ–­ åŽŸå§‹æ˜¯å¦æœ‰å†…å®¹ï¼Œå¦‚æžœæœ‰ æ¸…ç©º
 	if (str.pString != NULL)
 	{
 		delete [] str.pString;
@@ -17,11 +17,11 @@ istream& operator>> (istream& cin, MyString & str)
 	}
 
 
-	//ÈÃÓÃ»§ÊäÈëÄÚÈÝ
+	//è®©ç”¨æˆ·è¾“å…¥å†…å®¹
 	char buf[1024];
 	cin >> buf;
 
-	//°ÑÓÃ»§ÊäÈëµÄ×Ö·û´® ¸³Öµ¸ø str
+	//æŠŠç”¨æˆ·è¾“å…¥çš„å­—ç¬¦ä¸² èµ‹å€¼ç»™ str
 
 	str.pString = new char[strlen(buf) + 1];
 	strcpy(str.pString, buf);
@@ -32,7 +32,7 @@ istream& operator>> (istream& cin, MyString & str)
 
 MyString::MyString(const char * str)
 {
-	//cout << "ÓÐ²Î¹¹Ôìµ÷ÓÃ" << endl;
+	//cout << "æœ‰å‚æž„é€ è°ƒç”¨" << endl;
 	this->pString = new char[strlen(str) + 1];
 	strcpy(this->pString, str);
 	this->m_Size = strlen(str);
@@ -48,7 +48,7 @@ MyString::MyString(const MyString & str)
 MyString::~MyString()
 {
 
-	//cout << "Îö¹¹º¯Êýµ÷ÓÃ" << endl;
+	//cout << "æžæž„å‡½æ•°è°ƒç”¨" << endl;
 	if (this->pString != NULL)
 	{
 		delete[] this->pString;
@@ -96,14 +96,14 @@ MyString& MyString::operator=(const MyString & str)
 
 MyString MyString::operator+(const char * str)
 {
-	//¼ÆËã·µ»ØµÄ×Ö·û´®¿ª±ÙµÄ´óÐ¡
+	//è®¡ç®—è¿”å›žçš„å­—ç¬¦ä¸²å¼€è¾Ÿçš„å¤§å°
 	int newSize = this->m_Size + strlen(str) + 1;
 
 	char * tmp = new char[newSize];
 
 	memset(tmp, 0, newSize);
 
-	//Æ´½Ó×Ö·û´®
+	//æ‹¼æŽ¥å­—ç¬¦ä¸²
 	strcat(tmp, this->pString);
 	strcat(tmp, str);
 
@@ -121,7 +121,7 @@ MyString MyString::operator+(const MyString& str)
 
 	memset(tmp, 0, newSize);
 
-	//Æ´½Ó×Ö·û´®
+	//æ‹¼æŽ¥å­—ç¬¦ä¸²
 	strcat(tmp, this->pString);
 	strcat(tmp, str.pString);
 

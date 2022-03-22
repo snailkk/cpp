@@ -13,25 +13,25 @@ public:
 
 	~MyString();
 
-	//ÖØÔØ=ÔËËã·û
+	//é‡è½½=è¿ç®—ç¬¦
 	MyString& operator = (const char * str);
 	MyString& operator=(const MyString & str);
 	
-	//ÖØÔØ[]ÔËËã·û
+	//é‡è½½[]è¿ç®—ç¬¦
 	char& operator[](int index);
 
-	//ÖØÔØ +ÔËËã·û
+	//é‡è½½ +è¿ç®—ç¬¦
 	MyString operator+(const char * str);
 	MyString operator+(const MyString& str);
 
-	//ÖØÔØ == ÔËËã·û
+	//é‡è½½ == è¿ç®—ç¬¦
 	bool operator==(const char * str);
 	bool operator==(const MyString & str);
 
 
 private:
-	char * pString; //Ö´ĞĞ¶ÑÇøµÄÖ¸Õë
-	int m_Size; // ×Ö·û´®´óĞ¡
+	char * pString; //æ‰§è¡Œå †åŒºçš„æŒ‡é’ˆ
+	int m_Size; // å­—ç¬¦ä¸²å¤§å°
 
 };
 

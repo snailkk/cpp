@@ -40,41 +40,41 @@ public:
 
 void test01()
 {
-	Person p1("Ğ¡Ã÷", 10);
-	Person p2("Ğ¡Ç¿", 15);
-	Person p3("Ğ¡Ç¿", 15);
+	Person p1("å°æ˜", 10);
+	Person p2("å°å¼º", 15);
+	Person p3("å°å¼º", 15);
 	//int a = 10;
 	//int b = 10;
 	//if (a == b )
 	//{
-	//	cout << "a bÏàµÈ" << endl;
+	//	cout << "a bç›¸ç­‰" << endl;
 	//}
 
 	if ( p1 == p2)
 	{
-		cout << "p1 ºÍ p2 ÏàµÈ" << endl;
+		cout << "p1 å’Œ p2 ç›¸ç­‰" << endl;
 	}
 	else
 	{
-		cout << "p1 ºÍ p2 ²»ÏàµÈ" << endl;
+		cout << "p1 å’Œ p2 ä¸ç›¸ç­‰" << endl;
 	}
 
 	if (p2 == p3)
 	{
-		cout << "p2 ºÍ p3 ÏàµÈ" << endl;
+		cout << "p2 å’Œ p3 ç›¸ç­‰" << endl;
 	}
 	else
 	{
-		cout << "p2 ºÍ p3 ²»ÏàµÈ" << endl;
+		cout << "p2 å’Œ p3 ä¸ç›¸ç­‰" << endl;
 	}
 
 	if (p1 != p2)
 	{
-		cout << "p1 ºÍ p2 ²»ÏàµÈ" << endl;
+		cout << "p1 å’Œ p2 ä¸ç›¸ç­‰" << endl;
 	}
 	else
 	{
-		cout << "p1 ºÍ p2 ÏàµÈ" << endl;
+		cout << "p1 å’Œ p2 ç›¸ç­‰" << endl;
 	}
 }
 

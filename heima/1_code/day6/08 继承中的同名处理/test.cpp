@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
 using namespace std;
 
@@ -12,11 +11,11 @@ public:
 
 	void fun()
 	{
-		cout << "Base funcµ÷ÓÃ" << endl;
+		cout << "Base funcé " << endl;
 	}
 	void fun(int a)
 	{
-		cout << "Base func (int a)µ÷ÓÃ" << endl;
+		cout << "Base func (int a)è°ƒç”¨" << endl;
 	}
 
 
@@ -33,7 +32,7 @@ public:
 
 	void fun()
 	{
-		cout << "Son funcµ÷ÓÃ" << endl;
+		cout << "Son funcè°ƒç”¨" << endl;
 	}
 
 	int m_A;
@@ -43,26 +42,25 @@ void test01()
 {
 	Son s1;
 	cout << s1.m_A << endl;
-	//Ïëµ÷ÓÃ ¸¸ÀàÖÐ µÄm_A
+	//æƒ³è°ƒç”¨ çˆ¶ç±»ä¸­ çš„m_A
 
 	cout << s1.Base::m_A << endl;
 
 	s1.fun();
 
-	//µ÷ÓÃ¸¸ÀàµÄfunc
+	//è°ƒç”¨çˆ¶ç±»çš„func
 	s1.Base::fun(10);
 
 }
 
-//Èç¹û×ÓÀàºÍ¸¸ÀàÓµÓÐÍ¬ÃûµÄº¯Êý ÊôÐÔ £¬×ÓÀà»á¸²¸Ç¸¸ÀàµÄ³ÉÔ±Âð£¿ ²»»á
-//Èç¹û×ÓÀàÓë¸¸ÀàµÄ³ÉÔ±º¯ÊýÃû³ÆÏàÍ¬£¬×ÓÀà»á°Ñ¸¸ÀàµÄËùÓÐµÄÍ¬Ãû°æ±¾¶¼Òþ²Øµô
-//Ïëµ÷ÓÃ¸¸ÀàµÄ·½·¨£¬±ØÐë¼Ó×÷ÓÃÓò
+//å¦‚æžœå­ç±»å’Œçˆ¶ç±»æ‹¥æœ‰åŒåçš„å‡½æ•° å±žæ€§ ï¼Œå­ç±»ä¼šè¦†ç›–çˆ¶ç±»çš„æˆå‘˜å—ï¼Ÿ ä¸ä¼š
+//å¦‚æžœå­ç±»ä¸Žçˆ¶ç±»çš„æˆå‘˜å‡½æ•°åç§°ç›¸åŒï¼Œå­ç±»ä¼šæŠŠçˆ¶ç±»çš„æ‰€æœ‰çš„åŒåç‰ˆæœ¬éƒ½éšè—æŽ‰
+//æƒ³è°ƒç”¨çˆ¶ç±»çš„æ–¹æ³•ï¼Œå¿…é¡»åŠ ä½œç”¨åŸŸ
 
 
 int main(){
 
 	test01();
 
-	system("pause");
-	return EXIT_SUCCESS;
+	return 0;
 }

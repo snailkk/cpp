@@ -13,7 +13,7 @@ private:
 
 };
 
-//������ ��̳и����˽�г�Ա��ֻ�Ǳ�������������������ʲ���˽�г�Ա
+//子类中 会继承父类的私有成员，只是被编译给隐藏起来，访问不到私有成员
 class Son :public Base
 {
 public:

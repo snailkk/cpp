@@ -24,7 +24,7 @@ public:
 	int m_A;
 };
 
-//¶à¼Ì³Ğ
+//å¤šç»§æ‰¿
 class Son :public Base1, public Base2
 {
 public:
@@ -33,13 +33,13 @@ public:
 	int m_D;
 };
 
-//¶à¼Ì³ĞÖĞºÜÈİÒ×Òı·¢¶şÒåĞÔ
+//å¤šç»§æ‰¿ä¸­å¾ˆå®¹æ˜“å¼•å‘äºŒä¹‰æ€§
 void test01()
 {
 	cout << sizeof(Son) << endl;
 
 	Son s1;
-	//s1.m_A; //¶şÒåĞÔ
+	//s1.m_A; //äºŒä¹‰æ€§
 
 	cout << s1.Base1::m_A << endl; 
 	cout << s1.Base2::m_A << endl;
