@@ -1,6 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include <string>
+#include<string>
 using namespace std;
 
 
@@ -14,7 +13,7 @@ public:
 		this->m_Age = age;
 	}
 
-	bool operator==( Person & p)
+	operator==( Person & p)
 	{
 		if (this->m_Name == p.m_Name && this->m_Age == p.m_Age)
 		{
@@ -83,6 +82,5 @@ int main(){
 	test01();
 
 
-	system("pause");
-	return EXIT_SUCCESS;
+	return 0;
 }
